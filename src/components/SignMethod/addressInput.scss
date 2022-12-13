@@ -1,0 +1,41 @@
+.addressInputComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 140px;
+  margin-top: 2rem;
+  // border: 1px solid red;
+  margin-left: 5%;
+  > label {
+    font-size: 1.3rem;
+    color: #696969;
+  }
+  > input {
+    // width: 500px;
+    // height: 92px;
+    width: 92%;
+    height: 65px;
+    background: #e0e7ff;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.3rem;
+    padding-left: 2rem;
+  }
+  > p {
+    color: #767676;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .addressInputComponent {
+    margin-top: 1rem;
+    > label {
+      font-size: 1.2rem;
+    }
+    > input {
+      width: 350px;
+      height: 50px;
+      border-radius: 10px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.vehicleSection {
+  width: 90%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 5% 2rem 5%;
+  // border: 1px solid red;
+  .vehicleCaption {
+    width: 100%;
+    height: 10vh;
+
+    > h1 {
+      font-size: 30px;
+      font-weight: 600;
+      color: #696969;
+      padding: 0px 3.5rem;
+    }
+  }
+
+  .vehicleFormData {
+    width: 100%;
+    height: 60vh;
+    // border: 1px solid red;
+
+    .firstVehicleDiv {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .secondVehicleDiv {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .vehicleSection {
+    height: 70vh;
+    margin: 2rem 5%;
+    .vehicleCaption {
+      height: 7vh;
+      > h1 {
+        font-size: 1.6rem;
+        padding: 0 1rem;
+      }
+    }
+    .vehicleFormData {
+      .firstVehicleDiv {
+        flex-direction: column;
+      }
+      .secondVehicleDiv {
+        flex-direction: column;
+      }
+    }
+  }
+}

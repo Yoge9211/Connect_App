@@ -1,0 +1,160 @@
+//  PICTURE AND CAPTION STYLES
+.signInSection {
+  width: 100%;
+  height: 85vh;
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+
+  .signinpicture {
+    width: 100%;
+    height: 70vh;
+    // border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .picture {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // border: 1px solid blue;
+      > img {
+        // width: 100%;
+        // height: 100%;
+        width: 596px;
+        height: 596px;
+        object-fit: contain;
+      }
+    }
+    .caption {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: space-between;
+      justify-content: center;
+
+      > h2 {
+        // font-size: 1.8rem;
+        font-size: 45px;
+        color: #121e52;
+        font-weight: bold;
+      }
+      > p {
+        // font-size: 1.4rem;
+        font-size: 32px;
+        color: #121e52;
+        font-weight: 500;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+// FORM SECTION STYLES
+
+.formsection {
+  width: 100%;
+  height: 220vh;
+  //   border: 1px solid green;
+  margin-top: 2rem;
+  .mainHeading {
+    height: 20vh;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2rem;
+    > h1 {
+      color: #696969;
+      font-size: 40px;
+      font-weight: 600;
+    }
+  }
+  .nameInput {
+    width: 90%;
+    height: 150vh;
+    margin-left: 5%;
+    // border-radius: 1px solid red;
+
+    .name {
+      display: flex;
+    }
+    .nameMobileView {
+      display: none;
+    }
+    .address {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .signInSection {
+    margin-top: 0;
+    height: 55vh;
+    .signinpicture {
+      flex-direction: column;
+      position: relative;
+      height: 50vh;
+      .picture {
+        position: absolute;
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20vh;
+        > img {
+          width: 80%;
+          height: 30vh;
+          object-fit: contain;
+          z-index: -1000;
+        }
+      }
+      .caption {
+        position: absolute;
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > h2 {
+          font-size: 1.6rem;
+        }
+        > p {
+          font-size: 1.3rem;
+          padding: 0 3rem;
+        }
+      }
+    }
+  }
+  .formsection {
+    width: 100%;
+    // border: 1px solid red;
+    height: 110vh;
+    margin-top: 0;
+    .mainHeading {
+      height: 10vh;
+      > h1 {
+        font-size: 1.6rem;
+        // border: 1px solid red;
+      }
+    }
+    .nameInput {
+      width: 90%;
+      height: 90vh;
+
+      .name {
+        display: none;
+      }
+      .nameMobileView {
+        display: flex;
+      }
+    }
+  }
+}

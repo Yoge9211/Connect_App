@@ -1,0 +1,33 @@
+.nextButton {
+  // width: 100%;
+  height: 50px;
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .linkButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: inherit;
+    background-color: #121e52;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .nextButton {
+    // width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .linkButton {
+      width: 100px;
+      font-size: 1rem;
+    }
+  }
+}

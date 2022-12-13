@@ -1,0 +1,109 @@
+.joinUsSection {
+  width: 100%;
+  height: 65vh;
+  // border: 1px solid green;
+
+  .joinDescription {
+    width: 40%;
+    height: inherit;
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6rem;
+    > span {
+      h1 {
+        font-size: 2.5rem;
+        color: #121e52;
+        margin-top: 15px;
+        font-weight: 700;
+      }
+      > p {
+        font-size: 2.5rem;
+        color: #121e52;
+        margin-top: 15px;
+        font-weight: 700;
+      }
+    }
+    p {
+      font-size: 18px;
+      color: #6e7cb0;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+    .JoinButton {
+      text-align: center;
+      padding: 10px 10px;
+      width: 100px;
+      height: 40px;
+      border: 1px solid black;
+      background-color: #121e52;
+      color: white;
+      border-radius: 15px;
+      margin-top: 15px;
+    }
+  }
+  .joinImage {
+    width: 60%;
+    height: inherit;
+    background-image: url('../assets/images/joinPageImage.png');
+
+    img {
+      width: 100%;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .joinUsSection {
+    width: 100%;
+    height: 80vh;
+    background-image: url('../assets/images/joinPageImage.png');
+    // border: 1px solid red;
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .joinDescription {
+      width: 90%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #cbcbcb;
+      border-radius: 19px;
+      margin-left: 0%;
+      background-color: #fff;
+      > span {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        > h1 {
+          font-size: 3rem;
+          font-weight: bolder;
+        }
+        > p {
+          font-size: 1.5rem;
+          color: #2b3765;
+        }
+      }
+      > p {
+        font-size: 1.6rem;
+        padding: 2rem;
+      }
+      .JoinButton {
+        border-radius: 19px;
+        margin: 0;
+      }
+    }
+    .joinImage {
+      width: 0%;
+    }
+  }
+}

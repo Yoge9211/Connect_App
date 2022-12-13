@@ -1,0 +1,242 @@
+.ambulanceSection {
+  width: 100%;
+  height: 170vh;
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  overflow-x: hidden;
+  > h1 {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: #121e52;
+  }
+
+  .ambulanceType {
+    width: 100%;
+    height: 50vh;
+    // border: 1px solid yellow;
+    display: flex;
+    justify-content: space-evenly;
+    // align-items: center;
+    margin-top: 2rem;
+    // border: 1px solid red;
+    .ambulances {
+      width: 30%;
+      height: inherit;
+      // border: 1px solid blue;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      > div {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #e0e7ff;
+
+        > img {
+          width: 60px;
+          height: 60px;
+          object-fit: contain;
+        }
+      }
+      > h1 {
+        margin: 2rem 0px;
+        font-size: 1.5rem;
+        color: #121e52;
+        font-weight: bolder;
+      }
+      > p {
+        font-size: 1.2rem;
+        color: #121e52;
+        font-weight: bold;
+      }
+    }
+  }
+  .pointer {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    // border: 1px solid red;
+    margin-top: 5rem;
+
+    margin-left: 35vw;
+    // transform: translateX(78vw);
+  }
+  .ambulanceDescription {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    // border: 1px solid red;
+    // transform: translate((-50%));
+    .arrow {
+      width: 30px;
+      height: 30px;
+      background-color: #fff7ff;
+      border-radius: 15px;
+      opacity: 0.5;
+      z-index: 10;
+      position: absolute;
+      cursor: pointer;
+    }
+    .leftArrow {
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 10px;
+    }
+    .rightArrow {
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      right: 10px;
+    }
+    .slider {
+      display: flex;
+      flex-direction: row;
+
+      .imageAndDescription {
+        display: flex;
+        min-width: 100%;
+        width: 102%;
+        height: 70vh;
+        align-items: center;
+        background: #e5e9fb;
+        transition: 1s ease-in-out;
+        margin-right: 5px;
+        // border: 1px solid red;
+        // transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s ease-in-out;
+        .ambulanceTypeImage {
+          width: 50%;
+          height: inherit;
+          // border: 1px solid red;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          > img {
+            height: 65%;
+            width: 65%;
+            object-fit: contain;
+          }
+        }
+        .ambulanceDescriptionCaption {
+          // margin-top: 0px;
+          width: 50%;
+          height: inherit;
+          // border: 1px solid black;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          padding: 3rem;
+          > h1 {
+            font-size: 1.8rem;
+            color: #2b3765;
+            font-weight: 600;
+            line-height: 145%;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+          }
+          > p {
+            font-size: 1.3rem;
+            color: #696969;
+            line-height: 180%;
+            margin-bottom: 1rem;
+            font-weight: 400;
+          }
+          .ambulanceBookButton {
+            width: 140px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            background-color: #121e52;
+            // border: 1px solid red;
+            .linkTag {
+              color: white;
+              text-decoration: none;
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .ambulanceSection {
+    > h1 {
+      font-size: 1.6rem;
+    }
+    .ambulanceType {
+      height: 30vh;
+      .ambulances {
+        width: 25%;
+        > div {
+          width: 90px;
+          height: 90px;
+          > img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+        > h1 {
+          font-size: 1.4rem;
+        }
+        > p {
+          display: none;
+        }
+      }
+    }
+    .ambulanceDescription {
+      height: 120vh;
+      .slider {
+        // flex-direction: column;
+        .imageAndDescription {
+          flex-direction: column;
+          height: 100vh;
+          .ambulanceTypeImage {
+            width: 100%;
+            height: 30vh;
+            margin-top: 0rem;
+            > img {
+              width: 80%;
+              height: 80%;
+            }
+          }
+          .ambulanceDescriptionCaption {
+            width: 100%;
+            height: 60vh;
+            padding: 3rem;
+            > h1 {
+              display: none;
+            }
+            > p {
+              font-weight: 1.2rem;
+              letter-spacing: 0.7px;
+              // border: 1px solid red;
+              // margin-bottom: 2rem;
+              // padding: 1rem;
+            }
+            .ambulanceBookButton {
+              border-radius: 20px;
+              // width: 150px;
+              // height: 70px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
