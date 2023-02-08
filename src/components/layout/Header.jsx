@@ -13,6 +13,11 @@ class Header extends Component {
       clicked: !this.state.clicked,
     })
   }
+  handleHideClick = () => {
+    this.setState({
+      clicked: !this.state.clicked,
+    })
+  }
   render() {
     return (
       <nav className="nav">
@@ -21,16 +26,32 @@ class Header extends Component {
         </div>
         <div className="link">
           <div className={this.state.clicked ? 'links' : 'links active'}>
-            <Link className="mobile-links" to="/ambulance">
+            <Link
+              className="mobile-links"
+              to="/ambulance"
+              onClick={this.handleHideClick}
+            >
               Ambulance
             </Link>
-            <Link className="mobile-links" to="/join_us">
+            <Link
+              className="mobile-links"
+              to="/join_us"
+              onClick={this.handleHideClick}
+            >
               Join Us
             </Link>
-            <Link className="mobile-links" to="/contact">
+            <Link
+              className="mobile-links"
+              to="/contact"
+              onClick={this.handleHideClick}
+            >
               Contact Us
             </Link>
-            <Link className="mobile-links" to="/about">
+            <Link
+              className="mobile-links"
+              to="/about"
+              onClick={this.handleHideClick}
+            >
               About
             </Link>
           </div>

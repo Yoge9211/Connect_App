@@ -1,6 +1,6 @@
 import React from 'react'
 
-import processStepsImage from '../../assets/images/Process_image.png'
+import processStepsImage from '../../assets/images/processImage.svg'
 import '../../styles/ourProcess.scss'
 
 export default function OurProcess() {

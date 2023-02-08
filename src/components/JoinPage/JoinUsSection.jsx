@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Particle from './Particle'
 import '../../styles/joinUsSection.scss'
 
 function JoinUsSection() {
@@ -18,7 +18,9 @@ function JoinUsSection() {
           Join Us
         </Link>
       </div>
-      <div className="joinImage">{/* <img src={JoinImage} alt="" /> */}</div>
+      <div className="joinImage">
+        <Particle />
+      </div>
     </section>
   )
 }
